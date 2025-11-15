@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}AGORA PRÉSTAMOS - Inicio{% endblock %}
+
+{% block content %}
+<!-- ======================= -->
+<!--      HERO SECTION       -->
+<!-- ======================= -->
+<section class="hero text-center">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-8">
+        
+        <!-- LOGO GRANDE (usa los estilos del hero de base.html) -->
+        <div class="logo-text-container mb-4">
+            <span class="logo-maintext">
+                ÁG<span class="logo-o"></span>RA
+            </span>
+            <span class="logo-subtext">
+                FINANCE
+            </span>
+        </div>
+        
+        <!-- TÍTULO Y SUBTÍTULO (AÑADIDOS DE VUELTA) -->
+        <h1 class="hero-title display-4 fw-bold mb-3">
+          ¡Bienvenido a AGORA PRÉSTAMOS!
+        </h1>
+        <p class="hero-subtitle lead mb-4 mx-auto">
+          Financiamiento rápido, seguro y flexible. Tu dinero al instante, con confianza y asesoría personalizada.
+        </p>
+       
+        <!-- BOTÓN DE LLAMADA A LA ACCIÓN -->
+        <a href="https://wa.me/573042034755?text=Hola,%20quiero%20más%20información%20sobre%20préstamos%20Agora."
+           class="btn btn-primary-gradient btn-lg px-5 py-3 fw-bold">
+          ¡Quiero información!
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= -->
+<!--   WHY CHOOSE US SECTION -->
+<!-- ======================= -->
+<section class="section-dark py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="section-title fw-bold mb-3">
+          ¿Por qué elegir Agora Préstamos?
+        </h2>
+        <p class="section-subtitle fs-5 mb-5">
+          Somos tu aliado para avanzar. En Agora Préstamos te brindamos 
+          <strong class="text-highlight">soluciones financieras adaptadas a tus necesidades.</strong>
+          Olvídate de trámites lentos y complicados.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Feature Cards -->
+    <div class="row text-center gy-4">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-card-icon">
+            <i class="fas fa-bolt fa-2x"></i>
+          </div>
+          <h5 class="feature-card-title fw-bold mb-1">Rápido y Sencillo</h5>
+          <p class="feature-card-text">Dinero disponible en minutos.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-card-icon">
+            <i class="fas fa-lock fa-2x"></i>
+          </div>
+          <h5 class="feature-card-title fw-bold mb-1">100% Seguro</h5>
+          <p class="feature-card-text">Tu información y operaciones protegidas.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-card-icon">
+            <i class="fas fa-user-check fa-2x"></i>
+          </div>
+          <h5 class="feature-card-title fw-bold mb-1">Atención Personalizada</h5>
+          <p class="feature-card-text">Tu préstamo, hecho a tu medida.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-5">
+      <a href="https://wa.me/573042034755?text=Quiero%20recibir%20asesoría%20Agora."
+         class="btn btn-outline-light btn-lg">
+        Solicita Asesoría Ahora
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

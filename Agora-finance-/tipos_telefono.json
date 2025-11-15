@@ -1,0 +1,8 @@
+[
+  { "value": "movil", "label": "Móvil / Celular" },
+  { "value": "fijo", "label": "Fijo" },
+  { "value": "trabajo", "label": "Trabajo" },
+  { "value": "casa", "label": "Casa" },
+  { "value": "fax", "label": "Fax" },
+  { "value": "otro", "label": "Otro (especifique)" }
+]

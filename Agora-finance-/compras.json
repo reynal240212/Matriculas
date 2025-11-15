@@ -1,0 +1,14 @@
+[
+    {
+        "usuario_id": 4,
+        "plataforma": "NETFLIX PREMIUM",
+        "fecha_compra": "2025-09-25",
+        "duracion_dias": 30,
+        "fecha_vencimiento": "2025-10-25",
+        "correo_cuenta": "netfine75@bomyn.com",
+        "contrasena_cuenta": "Completa421",
+        "perfil_pin": "PERFIL 2 PIN 2020",
+        "aviso_enviado": false,
+        "id": 1
+    }
+]

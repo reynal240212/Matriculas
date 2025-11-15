@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "nombre": "Administrador",
+        "apellidos": "Principal",
+        "cedula": "0000000000",
+        "genero": "Masculino",
+        "numero": "0000000000",
+        "direccion": "Oficina Central",
+        "correo": "admin@gmail.com",
+        "estado": "Activo",
+        "fecha_activacion": "2025-10-21 12:58:17",
+        "duracion_dias": 30,
+        "password": "12345"
+    },
+    {
+        "id": 2,
+        "nombre": "Reinaldo De Jesus",
+        "apellidos": "Perez Navas",
+        "cedula": "1002161586",
+        "genero": "Masculino",
+        "numero": "3042034755",
+        "direccion": "calle 117b #26-114",
+        "correo": "reynal2402@gmail.com",
+        "estado": "Activo",
+        "fecha_activacion": "2025-10-16 15:35:35",
+        "duracion_dias": 30,
+        "password": "12345",
+        "nacionalidad": "Colombia"
+    },
+    {
+        "id": 3,
+        "nombre": "Juan",
+        "apellidos": "Perez",
+        "cedula": "768465468468",
+        "genero": "M",
+        "numero": "3042034758",
+        "direccion": "calle 117b #26-115",
+        "correo": "juanp2402@gmail.com",
+        "estado": "Activo",
+        "fecha_activacion": "2025-10-21 16:21:36",
+        "duracion_dias": 0,
+        "password": "pbkdf2:sha256:600000$GHI789..."
+    },
+    {
+        "id": 4,
+        "nombre": "Mary",
+        "apellidos": "colina",
+        "cedula": "001",
+        "genero": "F",
+        "numero": "3107134939",
+        "direccion": "Baranquilla",
+        "correo": "noaplica.@gmail.com",
+        "password": "scrypt:32768:8:1$m3NuSUetONN0fbjd$ba397e721955712e973cc2c18ded4ae7f650e8f50e93e8bade8a53bc7525efa1a7342ed4cf74d89abe61e804a78767c43ee3778919e13df3e2f2dfd22747293b",
+        "estado": "Inactivo",
+        "fecha_activacion": null,
+        "duracion_dias": 0
+    },
+    {
+        "id": 5,
+        "nombre": "diego",
+        "apellidos": "sarmiento",
+        "cedula": "45466665",
+        "genero": "M",
+        "numero": "30111111",
+        "direccion": "Baranquilla",
+        "correo": "diego@gmail.com",
+        "password": "scrypt:32768:8:1$bNVJpUy0yddfiMZg$86e0033cf7942d38e6505670e5555175114780fa06ac27eced867e53a4fa983bd52e7cb0c38d9a352dab02aeb0ee1ebb4a063fb8c879701ad3ee942b29d064a2",
+        "estado": "Activo",
+        "fecha_activacion": "2025-10-16 15:38:41",
+        "duracion_dias": 30
+    }
+]

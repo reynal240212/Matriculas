@@ -1,0 +1,18 @@
+[
+  { "value": "+57", "label": "Colombia (+57)" },
+  { "value": "+1", "label": "Estados Unidos (+1)" },
+  { "value": "+34", "label": "España (+34)" },
+  { "value": "+52", "label": "México (+52)" },
+  { "value": "+56", "label": "Chile (+56)" },
+  { "value": "+54", "label": "Argentina (+54)" },
+  { "value": "+51", "label": "Perú (+51)" },
+  { "value": "+49", "label": "Alemania (+49)" },
+  { "value": "+33", "label": "Francia (+33)" },
+  { "value": "+44", "label": "Reino Unido (+44)" },
+  { "value": "+55", "label": "Brasil (+55)" },
+  { "value": "+39", "label": "Italia (+39)" },
+  { "value": "+86", "label": "China (+86)" },
+  { "value": "+81", "label": "Japón (+81)" },
+  { "value": "+91", "label": "India (+91)" },
+  { "value": "otro", "label": "Otro" }
+]
