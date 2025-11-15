@@ -33,6 +33,9 @@ body {
   color: var(--color-texto);
   min-height: 100vh; /* Asegura que el footer se mantenga abajo en páginas cortas */
 }
+header .top-bar{
+  background-color: #639ac2;
+}
 
 /* Estilo para la barra de scroll (Navegadores WebKit) */
 ::-webkit-scrollbar {
@@ -45,13 +48,14 @@ body {
 }
 
 
+
 /* --- 2. LAYOUT PRINCIPAL (NAVBAR Y SIDEBAR) --- */
 /* =================================================== */
 
 /* Barra de Navegación Superior */
 .custom-navbar {
   background: var(--color-panel) !important;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #478eec;
   padding: 12px 0;
   width: 100%;
   position: sticky; /* Se mantiene fija al hacer scroll */
