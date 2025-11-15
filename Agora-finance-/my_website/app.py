@@ -212,22 +212,17 @@ def admin_required(f):
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
-    # ... (Tu ruta login sin cambios funcionales, utiliza cargar_usuarios_login) ...
     if request.method == "POST":
         correo = request.form.get("correo", "").strip().lower()
         password = request.form.get("password", "").strip()
-
-        if not correo or not password:
-            flash("Por favor ingresa tu correo y contraseña.", "warning")
-            return render_template("login.html")
-
         usuarios = cargar_usuarios_login()
-        usuario = next((u for u in usuarios if u["correo"].lower() == correo), None)
+        print("Usuarios cargados:", usuarios)
+        print("Correo recibido (limpio):", correo)
 
+        usuario = next((u for u in usuarios if u["correo"].strip().lower() == correo), None)
         if usuario is None:
             flash("Correo no registrado.", "danger")
             return render_template("login.html")
-
         password_db = usuario.get("password", "")
         login_exitoso = False
 
@@ -241,23 +236,20 @@ def login():
         if not login_exitoso:
             flash("Contraseña incorrecta.", "danger")
             return render_template("login.html")
-        
-        estado_actual = verificar_estado_usuario(usuario) 
+
+        estado_actual = verificar_estado_usuario(usuario)
         if estado_actual == "Inactivo":
-            flash("Tu cuenta se encuentra inactiva o tu período de activación ha expirado.", "danger")
+            flash("Tu cuenta está inactiva o expiró.", "danger")
             return render_template("login.html")
 
         session["logged_in"] = True
         session["correo"] = usuario["correo"]
         session["nombre"] = usuario["nombre"]
-
         flash(f"Bienvenido {usuario['nombre']}!", "success")
-
-        if usuario["correo"] == "admin@gmail.com":
+        if usuario["correo"].strip().lower() == "admin@gmail.com":
             return redirect(url_for("administracion"))
         else:
             return redirect(url_for("index"))
-
     return render_template("login.html")
 
 
