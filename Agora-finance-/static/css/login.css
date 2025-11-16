@@ -1,35 +1,30 @@
 /*
  * 1. CONFIGURACIÓN GLOBAL Y FONDO
- * Se mejora la consistencia del color y se define el logo de cabecera.
- */
+*/
 
 body {
     background-color: #ffffff;
-    overflow-x: hidden; /* Solo prevenir scroll horizontal */
+    overflow-x: hidden;
 }
 
-/* Estilo para el logo en la cabecera */
 .login-header {
     position: absolute;
     top: 0;
     left: 0;
     padding: 20px 40px;
-    z-index: 2; /* Asegura que el logo esté siempre al frente */
+    z-index: 2;
 }
 
-/* Fondo de Collage de Streaming */
 .login-background-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Se asume que 'fondo_Streaming.jpg' está en static/ */
-    background-image: url('../AGORA.png');
+    background-image: url('../AGORA.png'); /* Ajusta el nombre del archivo si es necesario */
     background-size: cover;
     background-position: center;
-    /* Efecto más sutil: Oscurece y aplica un blur ligero */
-    filter: brightness(35%) blur(4px); 
+    filter: brightness(35%) blur(4px);
     z-index: -1;
 }
 
@@ -40,32 +35,30 @@ body {
 
 /*
  * 2. CONTENEDOR DEL FORMULARIO
- * Se añade un efecto de cristalización y se unifica el color de fondo.
- */
+*/
 
 .login-container {
-    background-color: rgba(68, 68, 68, 0.85); /* Un poco más opaco para mejor contraste de texto */
+    background-color: rgba(41, 41, 41, 0.85);
     max-width: 450px;
     width: 100%;
     color: #ffffff;
-    border-radius: 8px; /* Ligeramente más redondeado */
-    padding: 3.5rem; /* Más padding interno para un look premium */
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9); /* Sombra más intensa */
+    border-radius: 8px;
+    padding: 3.5rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
 /*
  * 3. CAMPOS DE ENTRADA (INPUTS)
- * Se mejora el color y el enfoque (focus).
- */
+*/
 
 .login-input {
-    background-color: #333333; /* Fondo de campo más oscuro */
-    border: none; /* Se elimina el borde estándar para un look más limpio */
+    background-color: #333333;
+    border: none;
     color: #ffffff;
-    padding: 18px 20px; /* Un poco más de altura */
+    padding: 18px 20px;
     border-radius: 4px;
     font-size: 1rem;
-    transition: background-color 0.2s; /* Transición para el hover/focus */
+    transition: background-color 0.2s;
 }
 
 .login-input::placeholder {
@@ -74,25 +67,23 @@ body {
 }
 
 .login-input:focus {
-    background-color: #444444; /* Ligero cambio al enfocar */
-    border: none; /* Asegura que no aparezca el borde azul de Bootstrap por defecto */
-    box-shadow: 0 0 0 2px #6236ff; /* Sombra de enfoque con el color primario (rojo) */
+    background-color: #444444;
+    border: none;
+    box-shadow: 0 0 0 2px #a7ffff;
     color: #ffffff;
 }
 
 /*
  * 4. BOTONES (CTA)
- * Se mejora la consistencia del color y el efecto hover.
- */
+*/
 
-/* Botón principal de inicio de sesión (Rojo Netflix) */
 .btn-login-netflix {
     background-color: #34e4ff;
-    border: none; /* Botón sin borde */
+    border: none;
     color: #ffffff;
     padding: 14px 0;
     font-size: 1.15rem;
-    font-weight: 700 !important; /* Asegura negrita */
+    font-weight: 700 !important;
     border-radius: 4px;
     transition: background-color 0.2s;
 }
@@ -102,7 +93,6 @@ body {
     color: #ffffff;
 }
 
-/* Botón secundario (Gris oscuro) */
 .btn-secondary-netflix {
     background-color: #555555;
     border: none;
@@ -120,10 +110,8 @@ body {
 
 /*
  * 5. CHECKBOX Y ENLACES
- * Se centra en la accesibilidad visual.
- */
+*/
 
-/* Checkbox "Recordarme" */
 .form-check-input {
     background-color: #333333;
     border: 1px solid #555555;
@@ -136,9 +124,8 @@ body {
     border-color: #550ca3;
 }
 
-/* Enlaces pequeños y texto de soporte */
 .text-muted {
-    color: #8c8c8c !important; /* Sobreescribe el color de Bootstrap */
+    color: #8c8c8c !important;
 }
 
 .small-link {
@@ -148,5 +135,45 @@ body {
 
 .small-link:hover {
     color: #ffffff;
-    text-decoration: underline; /* Añadir subrayado al pasar el mouse */
+    text-decoration: underline;
+}
+
+/*
+ * 6. LOGOTIPO PERSONALIZADO ÁGORA FINANCE
+*/
+
+.logo-text-container {
+    text-align: center;
+    margin-bottom: 2.3rem;
+    user-select: none;
+}
+
+.logo-maintext {
+    font-size: 2.6rem;
+    letter-spacing: 0.13em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 2px 18px #ffffffb0;
+}
+
+.logo-o {
+    color: #23e5eb;
+    font-weight: 900;
+    font-size: 2.7rem;
+    text-shadow: 0 0 14px #19e7e8a8, 0 0 2px #23e5eb;
+    display: inline-block;
+    filter: drop-shadow(0 0 8px #1ee7e8cc);
+}
+
+.logo-subtext {
+    display: block;
+    margin-top: 0.22em;
+    letter-spacing: 0.34em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #b2bcc7;
+    font-size: 1.25rem;
+    font-weight: 500;
+    opacity: 0.85;
+    text-shadow: 0 1px 8px #fff5;
 }

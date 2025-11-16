@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nombre": "Reinaldo De Jesus ",
+        "apellidos": "Perez Navas",
+        "cedula": "1002161586",
+        "genero": "M",
+        "numero": "3042034755",
+        "direccion": "calle 117b #26-114",
+        "correo": "reynal2402@gmail.com",
+        "estado": "Activo"
+    },
+    {
+        "id": 2,
+        "nombre": "Juan",
+        "apellidos": "Perez",
+        "cedula": "768465468468",
+        "genero": "M",
+        "numero": "3042034758",
+        "direccion": "calle 117b #26-115",
+        "correo": "juanp2402@gmail.com",
+        "estado": "Activo"
+    }
+]
